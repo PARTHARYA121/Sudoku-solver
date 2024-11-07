@@ -1,0 +1,68 @@
+body {
+    background-image: url('8389460.jpg'); /* Set the digital wallpaper */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white; /* Change text color to white for better contrast */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #3b5998;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: repeat(9, 60px);
+    gap: 2px;
+    background-color: #4caf50; /* Green background for the Sudoku grid */
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* White background for the cells */
+    color: #000; /* Change text color to black for better visibility */
+    transition: background-color 0.3s ease;
+}
+
+.cell:focus {
+    outline: none;
+    background-color: #ffeb3b; /* Highlight when focused */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #b042c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
